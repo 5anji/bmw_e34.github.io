@@ -1,0 +1,76 @@
+.scroll-container {
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+
+  section {
+    scroll-snap-align: start;
+    height: calc(100vh - 65px);
+
+    .car-container {
+      user-select: none;
+      width: 100%;
+      height: calc(100vh - 65px);
+      border-left: 0px !important;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+
+      .overlay {
+        width: 45%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        will-change: color backround-color transform;
+        transition: color 40ms linear, background-color 80ms linear, transform 80ms ease-in;
+      
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #ffffff;
+          transform: scale(1.05);
+        }
+
+        div {
+          width: 70%;
+          height: 60%;
+
+          p {
+            font-size: 1.4vw;
+          }
+        }
+      }
+    }
+
+    .left {
+      justify-content: left;
+
+      .overlay {
+        margin-left: 2.5vw;
+      }
+    }
+
+    .right {
+      justify-content: right;
+
+      .overlay {
+        margin-right: 2.5vw;
+      }
+    }
+
+    .cabrio {
+      background-image: url('../assets/special_models/cabrio.jpg');
+    }
+
+    .alpina {
+      background-image: url('../assets/special_models/alpina.jpg');
+    }
+  } 
+}

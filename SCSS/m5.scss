@@ -1,0 +1,234 @@
+body {
+  h1 {
+    padding-top: 40vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 42px;
+  }
+  
+  h2 {
+    padding-top: 60px;
+    margin-left: 50px;
+  }
+
+  p {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .top-container {
+    height: calc(100vh - 65px);
+    width: 100%;
+    color: #ffffff;
+    background-image: url("../assets/m5/m-logo.png");
+    background-color: #221f1f;
+    background-size: 50% auto;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+
+    .overlay {
+      background-image: url("../assets/m5/background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      will-change: opacity;
+      transition: opacity 250ms linear 1000ms;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      span {
+        height: calc(100vh - 65px);
+        top: 50vh;
+        display: flex;
+        background-color: #221f1f;
+        align-items: center;
+        justify-content: center;
+        font-size: 42px;
+        font-weight: 800;
+        font-style: italic;
+        will-change: color;
+        opacity: 1;
+        will-change: opacity;
+        transition: opacity 250ms linear 2000ms;
+
+        &:hover {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .title {
+    margin-left: 20%;
+    margin-right: 20%;
+    user-select: none;
+    padding-bottom: 45px;
+    padding-top: 100px;
+    font-size: 42px;
+    font-weight: 600;
+    will-change: transform, text-shadow;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 80ms ease-in, text-shadow 40ms linear;
+    
+    &:hover {
+      transform: scale(1.2);
+      text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.25);
+    }    
+  }
+
+  .object-container {
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+    
+    .object {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 15px;
+
+      .overlay {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        opacity: 0;
+        will-change: opacity;
+        transition: opacity 400ms;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          text-decoration: none !important;
+          color: #ffffff !important;
+
+          p {
+            text-align: center;
+            font-size: 18px;
+
+            span {
+              font-size: 36px;
+              font-weight: 400;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .s38 {
+      background-image: url('../assets/m5/s38.jpg');
+      background-position: right;
+    }
+
+    .m60 {
+      background-image: url('../assets/m5/m60.jpg');
+      background-position: left;
+    }
+    
+    .g-280 {
+      background-image: url('../assets/m5/5-speed.jpg');
+      background-size: 50% auto !important;
+    }
+    
+    .g-420g {
+      background-image: url('../assets/m5/6-speed.jpg');
+      background-size: 50% auto !important;
+    }
+    
+    .style-20 {
+      background-image: url('../assets/m5/style-20.jpg');
+    }
+    
+    .style-21 {
+      background-image: url('../assets/m5/style-21.jpg');
+    }
+    
+    .style-37 {
+      background-image: url('../assets/m5/style-37.jpg');
+    }
+    
+    .front-bumper {
+      background-image: url('../assets/m5/front-bumper.jpg');
+    }
+    
+    .rear-bumper {
+      background-image: url('../assets/m5/rear-bumper.jpg');
+    }
+    
+    .sideskirts {
+      background-image: url('../assets/m5/sideskirts.jpg');
+    }
+    
+    .mirrors {
+      background-image: url('../assets/m5/mirrors.jpg');
+    }
+    
+    .spoiler {
+      background-image: url('../assets/m5/spoiler.jpg');
+    }
+    
+    .brakes {
+      background-image: url('../assets/m5/brakes.jpg');
+    }
+    
+    .suspension {
+      background-image: url('../assets/m5/suspension.jpg');
+    }
+  }
+
+  .columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    .object {
+      width: calc(100% - 2vw);
+      height: 70vh;
+    }
+  }
+
+  .columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+
+    .object {
+      width: calc(100% - 2vw);
+      height: 65vh;
+    }
+  }
+
+  .columns-2-alt {
+    grid-template-columns: repeat(2, 1fr);
+
+    .object {
+      width: calc(100% - 2vw);
+      height: 40vh;
+    }
+  }
+
+  .columns-3-alt {
+    grid-template-columns: repeat(3, 1fr);
+
+    .object {
+      width: calc(100% - 2vw);
+      height: 50vh;
+    }
+  }
+}
